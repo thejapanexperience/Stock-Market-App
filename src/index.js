@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 
 import './stores/StockStore'
 
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router'
 
 import Layout from './components/Layout'
 import Welcome from './components/Welcome'
@@ -12,7 +12,7 @@ import StockListing from './components/StockListing'
 import StockQuote from './components/StockQuote'
 
 render(
-  <Router >
+  <Router history={hashHistory}>
 {/*  <Router history={browserHistory}>
 */}  
   <Route path='stockPicker/' component={Layout}>
