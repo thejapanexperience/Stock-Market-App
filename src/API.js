@@ -6,7 +6,7 @@ const API = {
 
   fetchStockListing(symbol) {
       console.log('API fetchStockListing symbol ',symbol)
-      jsonp(`//dev.markitondemand.com/MODApis/Api/v2/Lookup/jsonp?input=${symbol}`, (err, data) => {
+      jsonp(`http://dev.markitondemand.com/MODApis/Api/v2/Lookup/jsonp?input=${symbol}`, (err, data) => {
       ServerActions.receiveStockListing(data)
     });
 
@@ -14,7 +14,7 @@ const API = {
 
   fetchStockQuote(symbol) {
       console.log('API fetchStockQuote symbol ',symbol)
-      jsonp(`//dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol=${symbol}`, (err, data) => {
+      jsonp(`http://dev.markitondemand.com/MODApis/Api/v2/Quote/jsonp?symbol=${symbol}`, (err, data) => {
       ServerActions.receiveStockQuote(data)
     });
 

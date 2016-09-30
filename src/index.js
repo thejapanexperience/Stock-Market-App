@@ -15,7 +15,7 @@ render(
   <Router >
 {/*  <Router history={browserHistory}>
 */}  
-  <Route path='/' component={Layout}>
+  <Route path='stockPicker/' component={Layout}>
     
     <IndexRoute component={Welcome}></IndexRoute>
     <Route path='/stockPicker' component={StockPicker}></Route>
