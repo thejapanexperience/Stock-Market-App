@@ -14,12 +14,12 @@ import StockQuote from './components/StockQuote'
 render(
   <Router history={browserHistory}>
   
-  <Route path='/' component={Layout}>
+  <Route path='/Stock-Market-App/' component={Layout}>
     
     <IndexRoute component={Welcome}></IndexRoute>
-    <Route path='/stockPicker' component={StockPicker}></Route>
-    <Route path='/stockListing' component={StockListing}></Route>
-    <Route path='/stockQuote' component={StockQuote}></Route>
+    <Route path='/Stock-Market-App/stockPicker' component={StockPicker}></Route>
+    <Route path='/Stock-Market-App/stockListing' component={StockListing}></Route>
+    <Route path='/Stock-Market-App/stockQuote' component={StockQuote}></Route>
     
   </Route>
 
