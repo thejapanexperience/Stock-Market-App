@@ -12,9 +12,9 @@ import StockListing from './components/StockListing'
 import StockQuote from './components/StockQuote'
 
 render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
   
-  <Route path='/Stock-Market-App/' component={Layout}>
+  <Route path='/' component={Layout}>
     
     <IndexRoute component={Welcome}></IndexRoute>
     <Route path='/stockPicker' component={StockPicker}></Route>

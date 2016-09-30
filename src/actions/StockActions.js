@@ -9,18 +9,6 @@ const StockActions = {
   fetchStockQuote(symbol) {
     API.fetchStockQuote(symbol);
   },
-
-  // fetchDefaultWeather() {
-  //   API.fetchDefaultWeather();
-  // },
-
-  //  fetchForecast(location) {
-  //   API.fetchForecast(location);
-  // },
-
-  // fetchDefaultForecast() {
-  //   API.fetchDefaultForecast();
-  // }
 }
 
 export default StockActions
