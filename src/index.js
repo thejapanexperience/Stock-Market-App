@@ -12,8 +12,9 @@ import StockListing from './components/StockListing'
 import StockQuote from './components/StockQuote'
 
 render(
-  <Router history={hashHistory}>
-  
+  <Router history={browserHistory}>
+{/*  <Router history={browserHistory}>
+*/}  
   <Route path='/' component={Layout}>
     
     <IndexRoute component={Welcome}></IndexRoute>
